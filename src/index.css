@@ -1,0 +1,103 @@
+body {
+  background-color: antiquewhite;
+}
+
+header {
+  background-color: gray;
+  padding: 1rem .5rem;
+}
+
+header ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  margin-bottom: 0px;
+  justify-content: center;
+}
+
+header ul li a {
+  color: #000;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+header ul li {
+  margin: 0rem 1rem;
+}
+
+header ul li a {
+  padding-bottom: 0.20rem;
+}
+
+a.active {
+  color: white;
+  border-bottom: 4px solid #fff;
+}
+
+.p-home {
+  text-align: center;
+  margin-top: 1rem;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.box-pokemon-detalle {
+  position: relative;
+  height: 30rem;
+}
+
+img.pokemon-detalle {
+  height: 100%;
+  position: absolute;
+  top: -5%;
+  left: 0;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+
+.box-detail-list {
+  padding: 1rem;
+  padding-top: 3rem;
+  
+}
+
+.name-pokemon {
+  text-transform: uppercase;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.ul-list-pokemon {
+  list-style: none;
+}
+
+.ul-list-pokemon li {
+  position: relative;
+  display: block;
+  padding-left: .5rem;
+  font-size: 20px;
+  margin-bottom: .5rem;
+  font-weight: bold;
+}
+
+.ul-list-pokemon li:before {
+  content: url('/pokeball.svg');
+  position: absolute;
+  left:-20px;
+  top: 2px;
+  width:  15px;
+  height: 15px;
+  transform: scale(.015);
+}
+
+.box-pokemon-detalle {
+    overflow: hidden;
+}
+
+.box-pokemon-detalle:hover img {
+  transform: scale(1.2);
+}
+
+.box-pokemon-detalle img {
+  transition: transform 0.8s ease;
+}
